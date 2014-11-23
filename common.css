@@ -64,6 +64,7 @@ body{
   transition:all 0.6s;
   background-repeat:no-repeat;
   background-size:contain;
+  z-index:10;
 }
 .prewie.billing{
   background-image:url("images/screen/billing.jpg");
@@ -113,4 +114,5 @@ body{
 .page-link:hover + .prewie,.page-link:focus + .prewie{
   transform: rotateY( 0deg );
   opacity:1;
+  z-index:100;
 }
