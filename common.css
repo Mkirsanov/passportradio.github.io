@@ -10,6 +10,8 @@ body{
 }
 h2{
   font-size:54px;
+  margin-bottom: 20px;
+  margin-left: -4px;
 }
 a{
   display:block;
