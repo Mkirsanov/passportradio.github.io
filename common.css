@@ -17,8 +17,20 @@ a{
   display:block;
   text-decoration:none;
   transition:all 0.2s;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  position:relative;
 }
 a:hover{
   padding-left:15px;
+  color: #6D00FF;
+  position:relative;
+}
+a:after:hover{
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  left:-50px;
+  height:20px;
+  width:3px;
 }
