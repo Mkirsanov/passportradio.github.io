@@ -24,7 +24,7 @@ a:before{
   content:'';
   display:block;
   position:absolute;
-  top: -3px;
+  top: -4px;
   left: 3px;
   height:30px;
   width:0;
@@ -32,7 +32,7 @@ a:before{
   transition:all 0.2s linear;
 }
 a:hover{
-  padding-left:15px;
+  padding-left:25px;
   color: #6D00FF;
   position:relative;
 }
