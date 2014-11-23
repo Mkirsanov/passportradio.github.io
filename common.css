@@ -16,7 +16,7 @@ h2{
 a{
   display:block;
   text-decoration:none;
-  transition:all 0.3s;
+  transition:all 0.2s;
   margin-bottom: 10px;
 }
 a:hover{
