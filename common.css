@@ -42,3 +42,13 @@ a:hover:before{
   opacity:1;
   left:3px;
 }
+a:focus{
+  outline:none;
+  padding-left:20px;
+  color: #6D00FF;
+  position:relative;
+}
+a:focus:before{
+  opacity:1;
+  left:3px;
+}
