@@ -41,4 +41,5 @@ a:hover, a:focus{
 a:hover:before, a:focus:before{
   opacity:1;
   left:2px;
+  outline:none;
 }
