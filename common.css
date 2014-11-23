@@ -33,22 +33,12 @@ a:before{
   background:#6D00FF;
   transition:all 0.2s linear;
 }
-a:hover{
+a:hover, a:focus{
   padding-left:20px;
   color: #6D00FF;
   position:relative;
 }
-a:hover:before{
+a:hover:before, a:focus:before{
   opacity:1;
-  left:3px;
-}
-a:focus{
-  outline:none;
-  padding-left:20px;
-  color: #6D00FF;
-  position:relative;
-}
-a:focus:before{
-  opacity:1;
-  left:3px;
+  left:2px;
 }
