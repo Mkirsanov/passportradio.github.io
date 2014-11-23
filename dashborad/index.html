@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>dashboard</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+<meta name = "format-detection" content = "telephone=no" /><!-- отмена форматирования номера для iphone-->
+<!--[Условие для ie!]>
+<script type="text/javascript" src="js/html5_elements.js"></script>
+<link rel="stylesheet" href="css/ie.css" type="text/css"/>
+<![endif]-->
+</head>
+<body>
+<!-- 
+1. Тень под аватаркой
+2. разобраться с классами уведомлений
+3. иконки в спрайты
+4. переделать разделители меню
+5. пункты меню при наведении
+7. Наведение на таб, активным должен быть весь прямоугольник, а не только текст
+8. расположение названия проектиа,поиска,кнопки разварота, должно быть посередине пункта проекта, не зависимо от высоты пункта
+ -->
+<!-- LAYOUT -->
+<div class="b-container">
+<!-- NAVIGATION -->
+	<nav class="b-navigation">
+		<div class="b-avatar">
+			<div class="b-avatar__notification">2</div>
+		</div>
+		<ul class="b-navigation-top">
+			<li class="b-navigation-top__item">
+				<a class="b-navigation-top__link board active" href="#board">Board</a>
+			</li>
+			<li class="b-navigation-top__item">
+				<a class="b-navigation-top__link projects" href="#projects">Projects</a>
+				<span class="b-navigation-top__notification">9</span>
+			</li>
+			<li class="b-navigation-top__item">
+				<a class="b-navigation-top__link settings" href="#settings">Settings</a>
+			</li>
+		</ul>
+		<ul class="b-navigation-bottom">
+			<li class="b-navigation-bottom__item">
+				<a class="b-navigation-bottom__link upgrade" href="#upgrade">Upgrade</a>
+				<span class="b-navigation-bottom__notification active">3</span>
+			</li>
+			<li class="b-navigation-bottom__item">
+				<a class="b-navigation-bottom__link logout active" href="#logout">Logout</a>
+			</li>
+		</ul>
+	</nav>
+<!-- NAVIGATION END -->
+<!-- CONTENT -->
+	<section class="b-content">
+<!-- HEADER -->
+		<header class="b-head">
+			<div class="b-left-panel">
+				<div class="b-left-panel__update" href="#update"></div>
+				<div class="b-left-panel__bredcrumb">
+					<span>Dashboard</span>
+				</div>
+			</div>
+			<div class="b-right-panel">
+				<div class="b-right-panel__status"></div>
+				<div class="b-right-panel__chat">
+					<span>5 user online</span>
+					<i class="b-right-panel_show-users"></i>
+				</div>
+			</div>
+		</header>
+<!-- HEADER END -->
+<!-- PROJECT_NAV -->
+			<div class="b-projects-nav">
+				<nav class="b-projects-tabs">
+					<ul class="b-projects-tabs-list">
+						<li class="b-projects-tabs-list__item active-project active-tab">
+							<a class="b-projects-tabs-list__link" href="#active_projects">Active Projects</a>
+							<div class="b-projects-tabs-list__notification">9</div>
+						</li>
+						<li class="b-projects-tabs-list__item messenger">
+							<a class="b-projects-tabs-list__link" href="#messenger">Messenger</a>
+							<div class="b-projects-tabs-list__notification active-notification"><span>2</span></div>
+						</li>
+					</ul>
+				</nav>
+				<div class="b-projects-search">
+					<input class="b-projects-search__input" type="text" placeholder="Search Project, User, Task, ect..."/>
+				</div>
+			</div>
+<!-- PROJECT_NAV END-->
+<!-- PROJECT_AREA -->
+		<section class="b-projects-area">
+<!-- PROJECT_BOARD -->
+			<section class="b-project-board">
+				<header class="b-project-head">
+					<div class="b-projects-search">
+						<input class="b-projects-search__input" type="text" placeholder="Search Project, User, Task, ect..."/>
+					</div>
+					<div class="b-project-new__add"></div>
+					<div class="b-project-new">
+						<div class="b-project-new__name">New Project 
+							<span class="b-project-new__details">
+							(descending)
+							</span>
+							<div class="b-project-new__show-more"></div>
+						</div>
+					</div>
+				</header>
+				<ul class="b-project-list">
+					<li class="b-project-item">
+						<div class="b-project-item__progress"><span>23%</span></div>
+						<a href="#" class="b-project-item__description">Create Contact Formular</a>
+						<div class="b-project-item__show-subtasks"></div>
+						<div class="b-project-item__search"></div>
+						<span class="b-project-item__name">worlda</span>
+					</li>
+					<li class="b-project-item">
+						<div class="b-project-item__progress"><span>87%</span></div>
+						<a href="#" class="b-project-item__description">Create Subpage PSD</a>
+						<div class="b-project-item__show-subtasks"></div>
+						<div class="b-project-item__search"></div>
+						<span class="b-project-item__name">worlda</span>
+					</li>
+					<li class="b-project-item">
+						<div class="b-project-item__progress"><span>83%</span></div>
+						<a href="#" class="b-project-item__description">Layout & implementation in HTML & CSS</a>
+						<div class="b-project-item__show-subtasks visible"></div>
+						<div class="b-project-item__search"></div>
+						<span class="b-project-item__name">ebay relaunch</span>
+						<ul class="b-project-subtasks">
+							<li class="b-project-subtasks__item">
+								<div class="b-project-subtasks__progress"><span>66%</span></div>
+								<a href="#" class="b-project-subtasks__description">Creating the Context</a>
+								<div class="b-project-subtasks__search"></div>
+								<div class="b-project-subtasks__deadline">
+									<div class="b-project-subtasks__update"></div>
+									<span class="b-project-subtasks__day">today, </span>
+									<span class="b-project-subtasks__time">13:40</span>
+									<span class="b-project-subtasks__time-of-day">pm</span>
+								</div>
+								<div class="b-project-subtasks__squad">
+									<div class="b-project-subtasks__person mark online"></div>
+									<div class="b-project-subtasks__person philip online"></div>
+									<div class="b-project-subtasks__person sebastian offline"></div>
+									<div class="b-project-subtasks__person others"><span>+3</span></div>
+								</div>
+							</li>
+							<li class="b-project-subtasks__item">
+								<div class="b-project-subtasks__progress ready">ready</div>
+								<a href="#"  class="b-project-subtasks__description ready">Implementation in the Layout</a>
+								<div class="b-project-subtasks__search"></div>
+								<div class="b-project-subtasks__deadline">
+									<div class="b-project-subtasks__update"></div>
+									<span class="b-project-subtasks__day">yestarday, </span>
+									<span class="b-project-subtasks__time">12:40</span>
+									<span class="b-project-subtasks__time-of-day">pm</span>
+								</div>
+								<div class="b-project-subtasks__squad">
+									<div class="b-project-subtasks__person philip online"></div>
+									<div class="b-project-subtasks__person sebastian offline"></div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="b-project-item">
+						<div class="b-project-item__progress"><span>23%</span></div>
+						<a href="#" class="b-project-item__description">Lorem ipsum dolor sit amet, elitr, sed diam<br/> nonumy eirmod tempor</a>
+						<div class="b-project-item__show-subtasks"></div>
+						<div class="b-project-item__search"></div>
+						<span class="b-project-item__name">panorama</span>
+					</li>
+					<li class="b-project-item">
+						<div class="b-project-item__progress"><span>98%</span></div>
+						<a href="#" class="b-project-item__description">Create Contact Formular</a>
+						<div class="b-project-item__show-subtasks"></div>
+						<div class="b-project-item__search"></div>
+						<span class="b-project-item__name">worlda</span>
+					</li>
+					<li class="b-project-item">
+						<div class="b-project-item__progress"><span>98%</span></div>
+						<a href="#" class="b-project-item__description">Create Contact Formular</a>
+						<div class="b-project-item__show-subtasks"></div>
+						<div class="b-project-item__search"></div>
+						<span class="b-project-item__name">worlda</span>
+					</li>
+					<li class="b-project-item">
+						<div class="b-project-item__progress"><span>98%</span></div>
+						<a href="#" class="b-project-item__description">Create Contact Formular</a>
+						<div class="b-project-item__show-subtasks"></div>
+						<div class="b-project-item__search"></div>
+						<span class="b-project-item__name">worlda</span>
+					</li>
+					<li class="b-project-item">
+						<div class="b-project-item__progress"><span>98%</span></div>
+						<a href="#" class="b-project-item__description">Create Contact Formular</a>
+						<div class="b-project-item__show-subtasks"></div>
+						<div class="b-project-item__search"></div>
+						<span class="b-project-item__name">worlda</span>
+					</li>
+					<li class="b-project-item">
+						<div class="b-project-item__progress"><span>98%</span></div>
+						<a href="#" class="b-project-item__description">Create Contact Formular</a>
+						<div class="b-project-item__show-subtasks"></div>
+						<div class="b-project-item__search"></div>
+						<span class="b-project-item__name">worlda</span>
+					</li>
+				</ul>
+			<div class="b-project-archive"><a href="#">Project Archiv<i class="arrow-right"></i></a></div>
+			</section>
+<!-- PROJECT_BOARD END-->
+<!-- COMPLETED_JOB -->
+			<section class="b-assignments">
+				<ul class="b-assignments__list">
+					<li class="b-developer">
+						<div class="b-developer__avatar mark">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Mark P.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar marvin">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Marvin S.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar sebastian">
+							<i class="b-developer__status offline"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Sebastian K.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar philip">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Philip O.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar mark">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Mark P.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+					<li class="b-developer">
+						<div class="b-developer__avatar benni">
+							<i class="b-developer__status"></i>
+						</div>
+						<div class="b-developer__details">
+							<span class="b-developer__name">Benni I.</span>
+							<span class="b-developer__task">add an image into Worlda</span>
+							<br/>
+							<span class="b-developer__completion-time">today, 10:30 pm</span>
+						</div>
+					</li>
+				</ul>
+				<div class="b-assignments__archive"><a href="#">Activity Archiv<i class="arrow-right"></i></a></div>
+			</section>
+<!-- COMPLETED_JOB END-->
+		</section>
+<!-- PROJECT_AREA END-->
+	</section>
+<!-- CONTENT END -->
+</div>
+<!-- LAYOUT END -->
+</body>
+</html>
