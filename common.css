@@ -5,3 +5,17 @@ body,p,h1,h2,h3,h4,h5,h6,img{
   font-family: 'Lato', sans-serif;
   font-weight:300;
 }
+body{
+  margin:50px;
+}
+h2{
+  font-size:54px;
+}
+a{
+  display:block;
+  text-decoration:none;
+  transition:all 0.3s;
+}
+a:hover{
+  padding-left:15px;
+}
