@@ -8,12 +8,16 @@ body,p,h1,h2,h3,h4,h5,h6,img{
 body{
   margin:50px;
 }
-h2{
+.layout-page{
+  max-width:1020px;
+  margin:0 auto;
+}
+.page-title{
   font-size:54px;
   margin-bottom: 20px;
   margin-left: -4px;
 }
-a{
+.page-link{
   display:block;
   text-decoration:none;
   transition:all 0.2s;
@@ -22,10 +26,10 @@ a{
   width: 300px;
   color:#000;
 }
-a:visited{
+.page-link:visited{
   color:#609;
 }
-a:before{
+.page-link:before{
   content:'';
   display:block;
   position:absolute;
@@ -37,13 +41,13 @@ a:before{
   background:#6D00FF;
   transition:all 0.2s linear;
 }
-a:hover, a:focus{
+.page-link:hover, .page-link:focus{
   padding-left:20px;
   color: #6D00FF;
   position:relative;
   outline:none;
 }
-a:hover:before, a:focus:before{
+.page-link:hover:before, .page-link:focus:before{
   opacity:1;
   left:2px;
 }
