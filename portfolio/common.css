@@ -118,7 +118,6 @@ body{
 .logo__image{
   position:absolute;
   left:50%;
-  top:10px;
   margin-left:-32px;
   z-index:10;
 }
