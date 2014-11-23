@@ -22,6 +22,9 @@ a{
   width: 300px;
   color:#000;
 }
+a:visited{
+  color:#609;
+}
 a:before{
   content:'';
   display:block;
