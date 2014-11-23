@@ -37,9 +37,9 @@ a:hover, a:focus{
   padding-left:20px;
   color: #6D00FF;
   position:relative;
+  outline:none;
 }
 a:hover:before, a:focus:before{
   opacity:1;
   left:2px;
-  outline:none;
 }
