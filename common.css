@@ -65,8 +65,50 @@ body{
   background-repeat:no-repeat;
   background-size:contain;
 }
-.prewie.mte_group{
-  background-image:url("images/screen/mte_group.jpg");
+.prewie.billing{
+  background-image:url("images/screen/billing.jpg");
+}
+.prewie.mte-group{
+  background-image:url("images/screen/mte-group.jpg");
+}
+.prewie.mte-sto{
+  background-image:url("images/screen/mte-sto.jpg");
+}
+.prewie.mte-finance{
+  background-image:url("images/screen/mte-finance.jpg");
+}
+.prewie.mtek{
+  background-image:url("images/screen/mtek.jpg");
+}
+.prewie.dvk{
+  background-image:url("images/screen/dvk.jpg");
+}
+.prewie.dpm{
+  background-image:url("images/screen/dpm.jpg");
+}
+.prewie.elgrafa{
+  background-image:url("images/screen/elgrafa.jpg");
+}
+.prewie.sea4u{
+  background-image:url("images/screen/sea4u.jpg");
+}
+.prewie.delivery{
+  background-image:url("images/screen/delivery.jpg");
+}
+.prewie.minerals{
+  background-image:url("images/screen/minerals.jpg");
+}
+.prewie.amocrm{
+  background-image:url("images/screen/amocrm.jpg");
+}
+.prewie.cleanwhite{
+  background-image:url("images/screen/cleanwhite.jpg");
+}
+.prewie.dashborad{
+  background-image:url("images/screen/dashborad.jpg");
+}
+.prewie.portfolio{
+  background-image:url("images/screen/portfolio.jpg");
 }
 .page-link:hover + .prewie,.page-link:focus + .prewie{
   transform: rotateY( 0deg );
