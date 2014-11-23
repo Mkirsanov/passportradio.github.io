@@ -20,6 +20,7 @@ a{
   margin-bottom: 20px;
   position:relative;
   width: 300px;
+  color:#000;
 }
 a:before{
   content:'';
