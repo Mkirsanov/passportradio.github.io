@@ -20,7 +20,7 @@ a{
   margin-bottom: 20px;
   position:relative;
 }
-a:before{
+:before{
   content:'';
   display:block;
   position:absolute;
@@ -33,4 +33,5 @@ a:hover{
   padding-left:15px;
   color: #6D00FF;
   position:relative;
+  transform:scale(0.5);
 }
