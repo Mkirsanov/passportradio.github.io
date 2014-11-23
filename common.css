@@ -19,6 +19,7 @@ a{
   transition:all 0.2s;
   margin-bottom: 20px;
   position:relative;
+  width: 300px;
 }
 a:before{
   content:'';
