@@ -63,6 +63,7 @@ body{
   transform: perspective( 1000px ) rotateY( -60deg );
   opacity:1;
   transition:all 0.6s;
+  background:url("images/screen/mte_group.jpg");
 }
 .page-link:hover ~ .prewie,.page-link:focus ~ .prewie{
   transform: rotateY( 0deg );
