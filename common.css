@@ -20,7 +20,7 @@ a{
   margin-bottom: 20px;
   position:relative;
 }
-a:after{
+a:before{
   content:'';
   display:block;
   position:absolute;
