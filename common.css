@@ -48,11 +48,10 @@ body{
   position:relative;
   outline:none;
 }
-/*.page-link:hover:before, .page-link:focus:before{
+.page-link:hover:before, .page-link:focus:before{
   opacity:1;
   left:2px;
 }
-*/
 .prewie{
   width: 450px;
   height: 500px;
