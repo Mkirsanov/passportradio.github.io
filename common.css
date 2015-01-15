@@ -48,10 +48,11 @@ body{
   position:relative;
   outline:none;
 }
-.page-link:hover:before, .page-link:focus:before{
+/*.page-link:hover:before, .page-link:focus:before{
   opacity:1;
   left:2px;
 }
+*/
 .prewie{
   width: 450px;
   height: 500px;
@@ -110,7 +111,9 @@ body{
 .prewie.portfolio{
   background-image:url("images/screen/portfolio.jpg");
 }
+/*
 .page-link:hover + .prewie,.page-link:focus + .prewie{
   transform: rotateY( 0deg );
   opacity:1;
 }
+*/
