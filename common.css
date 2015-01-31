@@ -26,6 +26,7 @@ body{
   position:relative;
   width: 300px;
   color:#000;
+  font-size:25px;
 }
 .page-link:visited{
   color:#609;
