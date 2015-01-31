@@ -22,7 +22,7 @@ body{
   display:block;
   text-decoration:none;
   transition:all 0.2s;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position:relative;
   width: 300px;
   color:#000;
@@ -37,7 +37,7 @@ body{
   position:absolute;
   top: -4px;
   left:-30px;
-  height:30px;
+  height:40px;
   width:2px;
   opacity:0;
   background:#6D00FF;
