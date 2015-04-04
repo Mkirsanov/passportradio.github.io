@@ -59,7 +59,7 @@ h1, h2,h3, h4, h5, h6{
             text-align:center;
         }
 
-        .header-right-block .call-mail-block a{color:#56a8ca; border-bottom:1px dotted; font-size:14px; text-decoration: none;}
+        .header-right-block .call-mail-block a{color:#56a8ca; font-size:14px; text-decoration: none;}
 
         .header-right-block .call-mail-block a:hover{color:#ff6565; border-bottom:none ;}
 
